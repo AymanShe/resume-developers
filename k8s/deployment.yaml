@@ -17,6 +17,7 @@ spec:
     spec:
       containers:
         - name: developers-app
-          image: zandergt/developers-app:latest
+          image: craymanresume.azurecr.io/resume/developers-app:v1
+          imagePullPolicy: Always
           ports:
             - containerPort: 3000
